@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Philosopher:ital@1&display=swap");
+html {
+  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Philosopher', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.headerPaginas {
+  height: 100px;
+  background-color: black;
+  padding: 0 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .headerPaginas .logo {
+    width: 200px;
+    height: auto; }
+
+.navBar a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+  font-size: 21px; }
+
+.mostrar-navBar,
+.esconder-navBar {
+  font-size: 60px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s; }
+
+.mostrar-navBar {
+  order: 1; }
+
+.navBar a:hover,
+.mostrar-navBar:hover,
+.esconder-navBar:hover {
+  color: aqua; }
+
+#check {
+  display: none; }
+
+.fondoMain {
+  height: 85vh;
+  background-image: url(../../Assets/imágenes/caballos-sierra1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.titulos {
+  font-size: 22px;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Cinzel Decorative';
+  gap: 10px;
+  letter-spacing: 3px; }
+
+#banner {
+  padding: 0px 50px;
+  background-image: url(../../Assets/imágenes/Banner.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center; }
+  #banner::before {
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    left: 0; }
+  #banner .contenido-banner {
+    font-size: 20px;
+    padding: 20px 0px;
+    position: relative;
+    color: white;
+    height: 100%;
+    text-align: justify;
+    font-family: 'Philosopher';
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.card {
+  width: 100%;
+  height: 80vh;
+  margin: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #d9d4cc;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease; }
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4%); }
+  .card img {
+    width: 100%;
+    height: 450px; }
+  .card .contenido {
+    padding: 10px;
+    text-align: center; }
+  .card .contenido p {
+    line-height: 1.5;
+    color: white; }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 18px;
+  background-color: black; }
+
+.gallery--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: all 300ms; }
+  .gallery--img:hover {
+    transform: scale(1.08); }
+  .gallery--img:nth-child(4) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(8) {
+    grid-row-start: span 2; }
+  .gallery--img:nth-child(9) {
+    grid-column-start: span 2; }
+
+.mainContacto {
+  background-image: url(../../Assets/imágenes/Horseshoe-bend.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+
+.contenedor {
+  background: rgba(0, 0, 0, 0.6);
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+  padding: 35px 35px;
+  border-radius: 6px; }
+  .contenedor form label {
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif; }
+  .contenedor form input, .contenedor form .form-textarea {
+    background: rgba(248, 244, 244, 0.932);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    font-family: sans-serif; }
+  .contenedor form .btn-submit {
+    font-family: sans-serif;
+    outline: none;
+    background: #5cd4d4;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 0px;
+    cursor: pointer; }
+
+.footerPaginas {
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 25px; }
+
+.redesPaginas img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px; }
+
+@media (min-width: 576px) {
+  .titulos {
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Cinzel Decorative';
+    gap: 10px;
+    letter-spacing: 3px; } }
+
+.footerPaginas {
+  height: 13vh; }
+
+.headerPaginas {
+  height: 100px; }
+
+@media (min-width: 768px) {
+  .titulos {
+    font-size: 26px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Cinzel Decorative';
+    gap: 10px;
+    letter-spacing: 3px; } }
+
+@media (min-width: 1024px) {
+  .titulos {
+    font-size: 28px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Cinzel Decorative';
+    gap: 10px;
+    letter-spacing: 3px; } }
+
+@media (max-width: 576px) {
+  .contenido-banner {
+    font-size: 16px; }
+  .redesPaginas img {
+    display: block;
+    padding: 5px; } }
+
+@media (max-width: 768px) {
+  .contenido-banner {
+    font-size: 18px; } }
+
+@media (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr); }
+  .gallery--img:nth-child(1) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(2) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(4) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(6) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(9) {
+    grid-column-start: span 3; } }
+
+@media (min-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(5, 1fr); }
+  .gallery--img:nth-child(1) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(2) {
+    grid-row-start: span 2; }
+  .gallery--img:nth-child(4) {
+    grid-column-start: span 2; }
+  .gallery--img:nth-child(6) {
+    grid-column-start: span 3; }
+  .gallery--img:nth-child(9) {
+    grid-column-start: span 4; } }

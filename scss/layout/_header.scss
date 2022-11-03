@@ -1,0 +1,42 @@
+.headerPaginas{
+    height: 100px;
+    background-color: $background-header;
+    padding: 0 50px;
+    color: $color-header-menu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+    width: 200px;
+    height: auto;
+    }
+}
+
+.navBar{
+    a{
+    color:$color-header-menu;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+    font-size: 21px;
+    }
+}
+.mostrar-navBar,
+.esconder-navBar{
+    font-size: 60px;
+    cursor: pointer;
+    display:none;
+    transition: 0.4s;
+}
+.mostrar-navBar{
+    order: 1;
+}
+.navBar a:hover,
+.mostrar-navBar:hover,
+.esconder-navBar:hover{
+    color: $color-navbar-hover;
+}
+#check{
+    display: none;
+}

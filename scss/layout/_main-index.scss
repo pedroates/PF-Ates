@@ -1,0 +1,20 @@
+.fondoMain{
+    height: 85vh;
+    background-image: url(../../Assets/imágenes/caballos-sierra1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include props-flex;
+    text-align: center;  
+    }
+    
+    
+
+.titulos{
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Cinzel Decorative';
+    gap: 10px;
+    letter-spacing: 3px; 
+    }

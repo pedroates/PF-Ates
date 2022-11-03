@@ -1,0 +1,30 @@
+#banner{
+    padding: 0px 50px;
+    background-image: url(../../Assets/imágenes/Banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    &::before{
+        content: "" ;
+        background: rgba(77, 77, 92, 0.6);
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        left: 0;
+    }
+    .contenido-banner {
+        font-size: 20px;
+        padding: 20px 0px;
+        position: relative;
+        color: white;
+        height: 100%;
+        text-align: justify;
+        font-family: 'Philosopher';
+        font-weight: bold;
+        letter-spacing: 4px;
+        line-height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
