@@ -10,7 +10,7 @@ html {
   box-sizing: border-box; }
 
 .headerPaginas {
-  height: 100px;
+  height: 10vh;
   background-color: black;
   padding: 0 50px;
   color: white;
@@ -48,7 +48,7 @@ html {
   display: none; }
 
 .fondoMain {
-  height: 85vh;
+  height: 80vh;
   background-image: url(../../Assets/imágenes/caballos-sierra1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
