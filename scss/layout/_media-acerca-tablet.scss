@@ -1,6 +1,37 @@
 @media(max-width: 768px){
     
+    .mostrar-navBar,
+    .esconder-navBar{
+        display: block;
+    }
+
+    .navBar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(7, 7, 7);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 150px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .navBar a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-navBar{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked~ .navBar{
+        right: 0;
+    }
     .contenido-banner{
         font-size: 18px;
     }
+    
+    
 }
