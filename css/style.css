@@ -81,7 +81,7 @@ html {
     height: 80vh;
     left: 0; }
   #banner .contenido-banner {
-    font-size: 20px;
+    font-size: 17px;
     padding: 20px 0px;
     position: relative;
     color: white;
@@ -227,10 +227,7 @@ html {
 
 @media (max-width: 576px) {
   .contenido-banner {
-    font-size: 16px; }
-  .redesPaginas img {
-    display: block;
-    padding: 5px; } }
+    font-size: 8px; } }
 
 @media (max-width: 768px) {
   .mostrar-navBar,
