@@ -1,16 +1,31 @@
-.footerPaginas{
-    background-color: $background-footer;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 20px;
+footer{
+    background-color: black;
+    height: 15vh;
+    padding: 25px;
 }
-
-.redesPaginas{
-    img{
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
+footer .social{
+    text-align: center;
+    a{
+        font-size: 35px;
+        color: white;
+        border: 1px solid white;
+        width: 45px;
+        height: 45px;
+        line-height: 42px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 8px;
+        opacity: 0.75;
     }
+    a:hover{
+        opacity: 0.9;
+        color: aqua;
+    } 
+}
+footer .copyright{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin-top: 15px;
 }
