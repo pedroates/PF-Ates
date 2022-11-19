@@ -188,12 +188,8 @@ footer {
 footer .social {
   text-align: center; }
   footer .social a {
-    font-size: 35px;
+    font-size: 40px;
     color: white;
-    border: 1px solid white;
-    width: 45px;
-    height: 45px;
-    line-height: 42px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -217,9 +213,6 @@ footer .copyright {
     font-family: 'Cinzel Decorative';
     gap: 10px;
     letter-spacing: 3px; } }
-
-.footerPaginas {
-  height: 13vh; }
 
 .headerPaginas {
   height: 100px; }
