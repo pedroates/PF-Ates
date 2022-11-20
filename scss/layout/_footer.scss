@@ -12,11 +12,12 @@ footer .social{
         text-align: center;
         border-radius: 50%;
         margin: 0 8px;
-        opacity: 0.75;
+        opacity: 0.9;
     }
     a:hover{
         opacity: 0.9;
         color: aqua;
+        transform: translateY(-4%)
     } 
 }
 footer .copyright{
